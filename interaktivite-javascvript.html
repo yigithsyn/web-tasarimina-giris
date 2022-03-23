@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İnteraktivite ve Javascript</title>
+</head>
+
+<body>
+
+    <input id="input1" type="text" value="" placeholder="Buraya girilen değer alttaki paragrafta anında gözükecek.">
+    <br>
+    <div id="div1"></div>
+    <button id="button1" onclick="createBox()">Kırmızı kutu oluştur.</button>
+
+    <script>
+        document.getElementById("input1").addEventListener('keyup', function(event){
+            // alert(document.getElementById("input1").value)
+            document.getElementById("div1").innerText = Number(document.getElementById("input1").value)*2
+        })
+
+        function createBox(){
+            var new_el = document.createElement("div")
+            new_el.style.width = "20px"
+            new_el.style.height = "20px"
+            new_el.style.backgroundColor = "red"
+            new_el.innerText = "abc"
+            document.getElementById("div1").append(new_el)
+        }
+
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stiller ve CSS Sınıfları</title>
+
+    <style>
+        body {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 24px;
+        }
+
+        .oblique-div {
+            font-style: oblique;
+            text-decoration: underline;
+        }
+
+        div {
+            background-color: coral;
+        }
+
+        .border-sample {
+            border: 1px solid red;
+            border-radius: 10px;
+        }
+
+        #div001{
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif !;
+            background-color: white;
+        }
+        
+        #div001:hover{
+            color: teal;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="oblique-div border-sample" style="color:blue; font-size: 30px;">Stil uygulayacağımız metni buraya
+        girebiliriz.</div>
+    <br>
+    <div class="oblique-div" style="color:red; font-size: 16px;">Bu 2. bölümde de stiller uygulayacağız.</div>
+    <br>
+
+    <div>Stilsiz bir bölüm.</div>
+    <br>
+    <div id="div001">Kimlikle tanımlanmış bölge.</div>
+
+</body>
+
+</html>
